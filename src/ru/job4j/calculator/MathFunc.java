@@ -10,8 +10,9 @@ public class MathFunc {
         int y = 1 / x;
         return y;
     }
+
     public static int func3(int x) {
-        int y = 8 / x* 2;
+        int y = 8 / x * 2;
         return y;
     }
 
