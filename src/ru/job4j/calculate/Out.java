@@ -8,7 +8,8 @@ public class Out {
         String surname = "Inanov";
         String otchestvo = "Ivanych";
         String probel = " ";
-        String id = name+probel+surname+probel+otchestvo;
+        byte age = 33;
+        String id = name+probel+surname+probel+otchestvo +probel +age +" лет";
         System.out.println(id);
     }
 }
