@@ -1,7 +1,5 @@
 package ru.job4j.condition;
 
-import ru.job4j.calculator.MathFunc;
-
 public class TrgArea {
     public static double area(double a, double b, double c) {
         double p = (a + b + c) / 2;
