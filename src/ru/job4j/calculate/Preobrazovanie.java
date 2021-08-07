@@ -15,5 +15,8 @@ public class Preobrazovanie {
         System.out.println("Преобразование из инт в чар " + i);
         int rsl = 100 + 'h';
         System.out.println("Результат вычисления: " + rsl);
+        char o = 45000;
+        float p = o;
+        System.out.println("char to float " + p);
     }
 }
