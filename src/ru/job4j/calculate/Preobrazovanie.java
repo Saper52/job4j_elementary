@@ -18,5 +18,7 @@ public class Preobrazovanie {
         char o = 45000;
         float p = o;
         System.out.println("char to float " + p);
+        boolean inPositiv = 10 == 0;
+        System.out.println("boolean = " + inPositiv);
     }
 }
