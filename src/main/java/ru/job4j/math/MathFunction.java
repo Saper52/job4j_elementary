@@ -16,8 +16,4 @@ public class MathFunction {
     public static double division(double first, double second) {
         return first / second;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
