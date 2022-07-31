@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
 
 class SqAreaTest {
 
@@ -32,5 +33,14 @@ class SqAreaTest {
         double expected = 49;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenP50K4Square100() {
+        int p = 50;
+        int k = 4;
+        double expected = 100;
+        double out = SqArea.square(p, k);
+        assertThat(out).isEqualTo(expected);
     }
 }
