@@ -5,9 +5,9 @@ public class StringEq {
         String first = new String("two");
         String one = "one";
         String three = "lalalal";
-        if (first == one) {
-            System.out.println("first equals one (compare through ==)");
-        } else {
+        if (first == one) {     /*нельзя так сравнивать переменные с ссылочным типом, */
+            System.out.println("first equals one (compare through ==)"); /* т.к. они хранят в */
+        } else {                                                         /* себе адрес на объект в котором значение */
             System.out.println("first does not equal one (compare through ==)");
         }
         if (first.equals(three)) {
