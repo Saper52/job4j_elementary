@@ -6,7 +6,7 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-        System.out.println(Triangle.exist(4,5,1));
+        System.out.println(Triangle.exist(4, 5, 1));
 
     }
 }
