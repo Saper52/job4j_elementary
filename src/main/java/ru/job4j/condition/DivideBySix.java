@@ -34,4 +34,9 @@ public class DivideBySix {
         }
         return rsl;
     }
+
+    public static void main(String[] args) {
+        int rsl = 18 % 4;
+        System.out.println("Остаток деления 18 на 4 равен " + rsl);
+    }
 }
