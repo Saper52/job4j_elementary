@@ -1,19 +1,14 @@
 package ru.job4j;
 
+
 public class Examples {
     public static void maks(int a, int b, int c) {
-        if (a > b) {
-            if (a > c) {
-                System.out.println("Max number - a");
-            } else {
-                System.out.println("Max number - c");
-            }
+        if (a > b && a > c) {
+            System.out.println("Max number - a");
+        } else if (c > b) {
+            System.out.println("Max number - c");
         } else {
-            if (c > b) {
-                System.out.println("Max number - c");
-            } else {
-                System.out.println("Max number - b");
-            }
+            System.out.println("Max number - b");
         }
     }
 
