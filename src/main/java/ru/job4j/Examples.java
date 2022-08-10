@@ -1,6 +1,5 @@
 package ru.job4j;
 
-
 public class Examples {
     public static void maks(int a, int b, int c) {
         if (a > b && a > c) {
