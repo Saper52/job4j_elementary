@@ -7,9 +7,12 @@ public class ArrayLoop {
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = index * 2 + 3;
         }
-        for (int index = 0; index < numbers.length; index++) {
-            System.out.println(numbers[index]);
+        for (int count : numbers) {
+            System.out.println(count);
         }
-
+        String[] names = {"Petr", "Boris", "Evgeniy", "Mixa"};
+        for (String gotoshop : names) {
+            System.out.println(gotoshop);
+        }
     }
 }
