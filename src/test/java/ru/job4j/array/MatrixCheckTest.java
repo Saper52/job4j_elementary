@@ -21,36 +21,10 @@ public class MatrixCheckTest {
     public void whenHasNotMonoHorizontal() {
         char[][] input = {
                 {' ', ' ', ' '},
-                {'X', 'X', 'X'},
+                {'X', 'X', ' '},
                 {' ', ' ', ' '},
         };
-        int row = 0;
-        boolean result = MatrixCheck.monoHorizontal(input, row);
-        assertThat(result).isFalse();
-    }
-
-    @Test
-    public void whenHasNotMonoHorizontalAndSubArrowDiffLenghtTrue() {
-        char[][] input = {
-                {' ', ' ', ' '},
-                {'X', 'X', 'X'},
-                {' ', ' ', ' ', ' ', ' '},
-                {'X', 'X', 'X', 'X', 'X', 'X', 'X'}
-        };
-        int row = 3;
-        boolean result = MatrixCheck.monoHorizontal(input, row);
-        assertThat(result).isTrue();
-    }
-
-    @Test
-    public void whenHasNotMonoHorizontalAndSubArrowDiffLenghtFalse() {
-        char[][] input = {
-                {' ', ' ', ' '},
-                {'X', 'X', 'X'},
-                {' ', ' ', ' ', ' ', ' '},
-                {'X', 'X', 'X', 'X', 'X', 'X', 'X'}
-        };
-        int row = 2;
+        int row = 1;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isFalse();
     }
