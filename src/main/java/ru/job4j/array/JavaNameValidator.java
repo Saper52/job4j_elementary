@@ -23,18 +23,33 @@ public class JavaNameValidator {
     /*метод должен вернуть true, если символ является символом доллара и нижнее подчеркивание;*/
     public static boolean isSpecialSymbol(int code) {
         boolean valid = false;
+<<<<<<< HEAD
         return valid == ((code == 36) || (code == 95));
+=======
+        valid = ((code == 36) || (code == 95));
+        return valid;
+>>>>>>> e02d04f (6.9. String - это массив [#504884])
     }
 
     /*метод должен вернуть true, если символ является прописным латинским символом;*/
     public static boolean isUpperLatinLetter(int code) {
         boolean valid = false;
+<<<<<<< HEAD
         return valid == isUpperCase(code);
+=======
+        valid = isUpperCase(code);
+        return valid;
+>>>>>>> e02d04f (6.9. String - это массив [#504884])
     }
 
     /*метод должен вернуть true, если символ является строчным латинским символом.*/
     public static boolean isLowerLatinLetter(int code) {
         boolean valid = false;
+<<<<<<< HEAD
         return valid != isUpperCase(code);
+=======
+        valid = !isUpperCase(code);
+        return valid;
+>>>>>>> e02d04f (6.9. String - это массив [#504884])
     }
 }
