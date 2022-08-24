@@ -5,36 +5,28 @@ import static java.lang.Character.isUpperCase;
 
 public class JavaNameValidator {
     public static boolean isNameValid(String name) {
-        boolean valid;
         char[] array = name.toCharArray();
-        int code = name.codePointAt(0);
-        // valid = !name.isEmpty() && isLowerLatinLetter(code) && !isDigit(code) && !isSpecialSymbol(code);
-        if (!name.isEmpty() && isLowerLatinLetter(code) && !isDigit(code) && !isSpecialSymbol(code)) {
+        boolean valid = !name.isEmpty() && isLowerLatinLetter(name.codePointAt(0)) && !isDigit(name.codePointAt(0)) && !isSpecialSymbol(name.codePointAt(0));
+        if (valid) {
             for (int i = 1; i < array.length; i++) {
-                if (!isSpecialSymbol(i) || !isUpperLatinLetter(i) || !isLowerLatinLetter(i)) {
+                if (!(isSpecialSymbol(array[i]) || isUpperLatinLetter(array[i]) || isLowerLatinLetter(array[i]))) {
                     valid = false;
+                    break;
                 }
-                break;
             }
         }
         return valid;
     }
 
     public static boolean isSpecialSymbol(int code) {
-        boolean valid = false;
-        valid = ((code == 36) || (code == 95));
-        return valid;
+        return code == 36 || code == 95;
     }
 
     public static boolean isUpperLatinLetter(int code) {
-        boolean valid = false;
-        valid = isUpperCase(code);
-        return valid;
+        return isUpperCase(code);
     }
 
     public static boolean isLowerLatinLetter(int code) {
-        boolean valid = false;
-        valid = !isUpperCase(code);
-        return valid;
+        return !isUpperCase(code);
     }
 }
