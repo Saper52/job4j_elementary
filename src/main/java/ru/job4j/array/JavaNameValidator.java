@@ -6,7 +6,7 @@ import static java.lang.Character.isUpperCase;
 public class JavaNameValidator {
     public static boolean isNameValid(String name) {
         char[] array = name.toCharArray();
-        boolean valid = !name.isEmpty() && isLowerLatinLetter(name.codePointAt(0)) && !isDigit(name.codePointAt(0)) && !isSpecialSymbol(name.codePointAt(0));
+        boolean valid = !name.isEmpty() && isLowerLatinLetter(array[0]) && !isDigit(array[0]) && !isSpecialSymbol(array[0]);
         if (valid) {
             for (int i = 1; i < array.length; i++) {
                 if (!(isSpecialSymbol(array[i]) || isUpperLatinLetter(array[i]) || isLowerLatinLetter(array[i]))) {
